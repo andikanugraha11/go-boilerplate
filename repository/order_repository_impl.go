@@ -16,7 +16,7 @@ func InitCategoryRepository() OrderRepository {
 }
 
 func (repository *OrderRepositoryImpl) Create(ctx context.Context, db *gorm.DB, order entity.Order) entity.Order {
-	db.Save(order)
+	db.Save(&order)
 	return order
 }
 

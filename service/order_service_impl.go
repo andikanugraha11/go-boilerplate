@@ -2,7 +2,6 @@ package service
 
 import (
 	"context"
-
 	"github.com/andikanugraha11/go-boilerplate/model/api"
 	"github.com/andikanugraha11/go-boilerplate/model/entity"
 	"github.com/andikanugraha11/go-boilerplate/repository"

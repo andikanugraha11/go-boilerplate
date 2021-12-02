@@ -56,7 +56,7 @@ func (controller *OrderControllerImpl) GetAll(c *gin.Context) {
 }
 
 func (controller *OrderControllerImpl) Create(c *gin.Context) {
-	orderCreateRequest := api.OrderCreateRequest{}
+	var orderCreateRequest api.OrderCreateRequest
 
 	c.ShouldBindJSON(&orderCreateRequest)
 
