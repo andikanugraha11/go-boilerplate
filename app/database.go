@@ -7,7 +7,7 @@ import (
 )
 
 func InitDB() *gorm.DB {
-	dsn := "host=127.0.0.1 user=postgres password=postgres dbname=go_boiler_plate port=5432 sslmode=disable TimeZone=Asia/Jakarta"
+	dsn := "host=db user=postgres password=postgres dbname=go_boiler_plate port=5432 sslmode=disable TimeZone=Asia/Jakarta"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic(err.Error())

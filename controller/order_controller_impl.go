@@ -46,6 +46,7 @@ func (controller *OrderControllerImpl) GetById(c *gin.Context) {
 
 func (controller *OrderControllerImpl) GetAll(c *gin.Context) {
 	orders := controller.OrderService.GetAll(c)
+
 	apiResponse := api.ApiResponse{
 		Code:    http.StatusOK,
 		Message: "OK",
